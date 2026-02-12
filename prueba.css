@@ -1,72 +1,121 @@
-*{ margin:0;
-    padding:0; 
-    box-sizing:border-box; 
-    font-family:Arial, Helvetica, sans-serif; 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
-body{ background:#ccc; 
-    display:flex; 
-    justify-content:center; 
-    align-items:center; 
-    height:100vh; 
+body{
+    background:#1a1a1a;
 }
 
- .container{ 
-    width:300px; 
-    background:#3d00b8; 
-    padding:15px; 
+.container{
+    min-height:100vh;
+    background:#3d00b8;
+    display:flex;
+    flex-direction:column;
 }
 
- .italia{
-     background:#2e7d32; 
-     color:white; 
-     text-align:center; 
-     padding:20px; font-size:28px; 
-     letter-spacing:3px; 
+
+.italia{
+    background:#2e7d32;
+    color:white;
+    text-align:center;
+    padding:40px;
+    font-size:40px;
+    letter-spacing:4px;
+}
+
+
+.jugadores{
+    background:#eee;
+    display:flex;
+    justify-content:space-around;
+    padding:30px 10px;
+}
+
+.jugador{
+    text-align:center;
+    font-size:18px;
+}
+
+.foto{
+    width:80px;
+    height:80px;
+    background:black;
+    border-radius:50%;
+    margin:0 auto 10px;
+}
+
+
+.anio{
+    background:#c40000;
+    color:white;
+    text-align:center;
+    padding:40px;
+    font-size:48px;
+}
+
+
+.campeon{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+    flex:1;
+}
+
+.card{
+    background:#ddd;
+    height:150px;
+    border-radius:40px;
+    margin-top:20px;
+}
+
+
+.menu{
+    background:#2e7d32;
+    display:flex;
+    justify-content:space-around;
+    color:white;
+    padding:20px 0;
+    font-size:18px;
+}
+
+@media (max-width: 600px){
+
+    .container{
+        width:300px;
+        margin:20px auto;
+        min-height:auto;
     }
 
-.jugadores{ 
-    background:#eee; 
-    display:flex; justify-content:space-around; 
-    padding:15px 5px; 
-}
+    .italia{
+        font-size:28px;
+        padding:20px;
+    }
 
-.jugador{ 
-    text-align:center;
-    font-size:12px; 
-}
+    .jugador{
+        font-size:12px;
+    }
 
-.foto{ 
-    width:50px; 
-    height:50px; 
-    background:black; 
-    border-radius:50%; 
-    margin:0 
-    auto 5px; } 
- .anio{ 
-        background:#c40000; 
-        color:white; 
-        text-align:center; 
-        padding:20px; 
-        font-size:32px; }
+    .foto{
+        width:50px;
+        height:50px;
+    }
 
- .campeon{ 
-    background:black; 
-    color:white; text-align:center; 
-    padding:20px 10px; 
-}
+    .anio{
+        font-size:32px;
+        padding:20px;
+    }
 
-.card{ 
-    background:#ddd; 
-    height:100px; border-radius:25px; 
-    margin-top:15px; 
-}
+    .card{
+        height:100px;
+        border-radius:25px;
+    }
 
- .menu{ 
-    background:#2e7d32; 
-    display:flex; 
-    justify-content:space-around; 
-    color:white; 
-    padding:10px 0; 
-    font-size:14px; 
+    .menu{
+        font-size:14px;
+        padding:10px 0;
+    }
 }
